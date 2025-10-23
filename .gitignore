@@ -1,0 +1,11 @@
+# Archivos ejecutables y de objeto (C/C++)
+*.exe
+*.obj
+*.o
+a.out
+
+# Archivos de la IDE o compilador
+/build/
+
+# Archivos temporales
+*~
