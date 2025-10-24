@@ -5,6 +5,7 @@
 #include <iostream>
 using namespace std;
 
+// Es importante saber que el valor de MAX debe ser constante. Sino habra un error de compilacion
 const int MAX = 10;
 void introducirNumerosArray(int mediaNumeros[MAX]);
 float calcularMedia(int mediaNumeros[MAX], int suma);
@@ -27,6 +28,7 @@ void introducirNumerosArray( int mediaNumeros[MAX] ){
     }
 }
 
+// Esto se llama sumatorio
 float calcularMedia(int mediaNumeros[MAX], int suma){
     for(int i = 0; i < MAX; i++){
         suma += mediaNumeros[i];
