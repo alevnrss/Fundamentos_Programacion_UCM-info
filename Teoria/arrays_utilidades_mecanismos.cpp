@@ -3,9 +3,10 @@ using namespace std;
 
 const int MAX= 5;
 typedef float tNotas[MAX];  // Declaracion de un tipo definido por el usuario
+                            // Declaracion de un tipo array de 5 elementos de tipo float
 
 int main(){
-    tNotas notasAlumnos= { 0 };
+    tNotas notasAlumnos = { 0 }; // notasAlumnos es un array de 5 elementos de tipo float
     float mediaNotas = 0;
     float menor = 10; // Siendo 10 la mayor calificacion posible
     float mayor = 0;  // Siendo 0 la menor calificacion posible
