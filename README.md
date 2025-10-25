@@ -18,3 +18,17 @@ Al final de este documento nos da la diferencias de Recorrido y Busqueda, y dent
 
 EXAMEN 5 Noviembre (TEMA 1,2,3).
 
+
+> FSTREAM- Lectura y escritura de ficheros .txt 
+
+### 1. ¿Que es un centinela?
+Un centinela es un valor especial dentro de los datos que indica el fin de la lectura.
+
+En lugar de leer hasta el final del archivo con eof() (que a veces es confuso o poco fiable), el programa detecta un valor concreto y se detiene cuando lo encuentra.
+
+Por ejemplo:
+
+Si estás leyendo números, el centinela puede ser 0 o -1.
+
+Si estás leyendo texto, podría ser "FIN" o "END".
+
