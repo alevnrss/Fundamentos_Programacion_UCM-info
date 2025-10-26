@@ -1,7 +1,13 @@
 /**
- * Buscar subcadena de cadenas de string en el archivo de texto.txt
-
-*/
+ * LABORATORIO 15-OCT-2025 EJERCICIO F)
+ * LECTURA DE FICHEROS DE TEXTO PARTE 3: Buscar un SUBSTRING en un archivo.txt 
+ * En este ejemplo se mostrara como realiza la lectura de un fichero archivo.txt y que su vez
+ * se tenga que dar la busqueda con contador de cuantos SUBSTRIGN se repiten o son iguales a JUAN.
+ * 
+ * UTILZACION DE LA FUNCION .find() -> Esta funcion realizar la busqueda de subcadenas dentro de un String(Busqueda de substrings) 
+ * UTILIZACION DE TABULADOR PARA LA SALIDA DE DATOS POR CONSOLA -> Finalmente, para mostrar los datos se dara el uso de tabuladores para realizar
+ * saltos de linea y tabulacion.
+ */
 
 #include <iostream> 
 #include <fstream>
