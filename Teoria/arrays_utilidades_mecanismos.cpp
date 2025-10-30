@@ -11,13 +11,14 @@ int main(){
     float menor = 10; // Siendo 10 la mayor calificacion posible
     float mayor = 0;  // Siendo 0 la menor calificacion posible
 
-    // Leer 10 notas de teclado 
+    // Meter elementos en el array
     cout << "Introduzca las "<< MAX <<" notas de los alumnos: " << endl;
     for(int i=0; i<MAX; i++){
+        cout << "Alumno: "<< i + 1 << endl;
         cin >> notasAlumnos[i];
     }
 
-    // Mostrar las notas que se han tecleado
+    // Recorrer el array y mostrar elementos
     cout << "Las notas de los " << MAX << " alumnos son:"<< endl;
     for(int i=0; i<MAX; i++){
         cout << notasAlumnos[i] << "|";
@@ -31,7 +32,7 @@ int main(){
     cout << "La media de las notas es: " << (mediaNotas/MAX) << endl;
     cout << endl;
 
-    // Mostrar la menor y mayor nota de todas las notas de los alumnos.
+    // Comparacion de datos/notas del array - Mostrar la menor y mayor nota de todas las notas de los alumnos.
     for(int i=0; i<MAX; i++){
         if(notasAlumnos[i] < menor){
             menor = notasAlumnos[i];
