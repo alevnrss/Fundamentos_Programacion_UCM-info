@@ -18,3 +18,27 @@ Al final de este documento nos da la diferencias de Recorrido y Busqueda, y dent
 
 EXAMEN 5 Noviembre (TEMA 1,2,3).
 
+
+> FSTREAM- Lectura y escritura de ficheros .txt 
+
+### 1. ¿Que es un centinela?
+Un centinela es un valor especial dentro de los datos que indica el fin de la lectura.
+
+En lugar de leer hasta el final del archivo con eof() (que a veces es confuso o poco fiable), el programa detecta un valor concreto y se detiene cuando lo encuentra.
+
+Por ejemplo:
+
+Si estás leyendo números, el centinela puede ser 0 o -1.
+
+Si estás leyendo texto, podría ser "FIN" o "END".
+
+### 2. FUNCION .find()
+Esta funcion es importante cuando se trata de la busqueda de subcadenas dentro de una cadena de texto. En pocas palabras, busqueda de substrings.
+Primero definimos como una variable CONSTANTE y STRING el valor de esa subcadena. 
+
+Para decir que ha encontrado esa subcadena, dara el VALOR de la posicion desde donde empieza dicha variable constante.
+Imaginamos por ejemplo JUAN, luego si tenemos "Juan Perez", la posicion al encontrarla sera 0.
+
+Para poder hacer un contador simplemente cuando sea distinto a -1 es cuando lo habra encontrado pues cuando da -1 es que no ha encontrado nada y lo
+que buscamos es que encuentre esos valores.
+
