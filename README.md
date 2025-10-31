@@ -1,3 +1,54 @@
+# TEMA 3
+> TIPO DE DATOS ENUMERADO
+- Este tipo de datos es de tipo de datos "SIMPLES" las cuales se encuentran definidos por el usuario.
+- Se trata de un conjunto de constantes enteras (ENUMERADORES).
+    - El orden de estos enumeradores IMPORTA.
+**Uso de enum:**
+- Usualmente se utilizan con switch
+- Tipos ordinales y escalares.
+
+**Limitaciones del tipo de datos enumerado**
+- Estos no admiten operadores de incremento/decremento 
+- La entrada/salida NO esta permitida
+
+*ESTRUCTURA DE UN ENUMERADO*
+```cpp
+    // Declaracion del tipo enumerado
+    typedef enum tNombreTipo {enum1, enum2, enum3};
+    // Declaracion de variables del tipo enumerado creado
+    tNombreTipo variable1;
+```
+
+**Posiciones del enum**
+Es importante saber que los enumerados del tipo de dato enumerado estan ordenados con indices empezando desde 0 a n.
+```cpp
+    typedef enum tSemana{lunes, martes, miercoles, jueves, viernes, sabado, domingo};
+    // lunes = 0, martes = 1, miercoles = 2, ....
+```
+**IMPORANTE SABER QUE...**
+> Se puede pensar que en el ENUM tSemana estamos guardando cadenas de caracteres(strings). Sin embargo, no es asi,
+> lo que estamos guardando son numeros, donde a cada numero le corresponde una CONSTANTE.
+
+
+
+
+
+
+
+
+---
+
+
+
+
+
+
+
+
+
+
+
+
 Viernes 24 Octubre 2025
 PDF - Tema3-Secuencias-Recorrido-Busqueda.pptx
 >> IMPORANTE PARA MANEJAR BIEN LOS ARRAYS
@@ -41,4 +92,5 @@ Imaginamos por ejemplo JUAN, luego si tenemos "Juan Perez", la posicion al encon
 
 Para poder hacer un contador simplemente cuando sea distinto a -1 es cuando lo habra encontrado pues cuando da -1 es que no ha encontrado nada y lo
 que buscamos es que encuentre esos valores.
+
 
