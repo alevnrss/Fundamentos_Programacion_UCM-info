@@ -1,0 +1,5 @@
+12345678F 2 123.95 Reproductor de DVD
+00112233A 1 218.4 Disco portátil
+32143567J 3 32 Memoria USB 16Gb
+76329845H 1 134.5 Modem ADSL
+X
