@@ -1,7 +1,38 @@
 # TEMA 2
 ---
+
+## 📌 Funciones Matemáticas `#include <cmath>`.
+Disponemos de las siguientes funciones matemáticas.
+- `sqrt(x)` : *Raiz cuadrada*.  
+- `pow(a,b)` : *Potencia de un numero*.
+- `abs(x)`: *Valor absoluto de un numero entero*.
+- `fabs(x)`: *Valor absoluto de un numero real o flotante*.
+
+> Tambien tenemos el coseno, seno y tangente de un numero. `sen(x)`, `cos(x)` ,`tan(x)`.
+
+*Ejemplo de funciones matematicas*
+```cpp
+#include <iostream>
+#include <cmath>  // IMPORANTE LA CABECERA
+using namespace std;
+
+int main() {
+    int a = 10, b = 3;
+    cout << "Suma: " << a + b << endl;
+    cout << "Resta: " << a - b << endl;
+    cout << "Multiplicacion: " << a * b << endl;
+    cout << "Division real: " << (double)a / b << endl;
+    cout << "Modulo: " << a % b << endl;
+    cout << "Raiz de 25: " << sqrt(25) << endl;
+    cout << "2^5: " << pow(2, 5) << endl;
+}
+
+``` 
+
+---
 > CIN - Strings
-## 📌 Diferencias entre `getline(cin, ...)` y `cin.get()` en C++
+
+## 📌 Diferencias entre `getline(cin, ...)` y `cin.get()` en C++.
 
 En C++ existen varias formas de leer datos desde la entrada estándar, y es común que aparezcan problemas cuando se usa `getline` después de `cin >>`.  
 
@@ -37,20 +68,15 @@ getline(cin, nombre);
 ---
 # TEMA 3
 ---
-
 > TIPO DE DATOS ENUMERADO
+
+## 📌 Tipo de datos enumerado `typedef enum tEnum{};`.
+
 - Este tipo de datos es de tipo de datos "SIMPLES" las cuales se encuentran definidos por el usuario.
 - Se trata de un conjunto de constantes enteras (ENUMERADORES).
-    - El orden de estos enumeradores IMPORTA.
-**Uso de enum:**
-- Usualmente se utilizan con switch
-- Tipos ordinales y escalares.
+- El orden de estos enumeradores IMPORTA.
 
-**Limitaciones del tipo de datos enumerado**
-- Estos no admiten operadores de incremento/decremento 
-- La entrada/salida NO esta permitida
-
-*ESTRUCTURA DE UN ENUMERADO*
+>*ESTRUCTURA DE UN ENUMERADO*
 ```cpp
     // Declaracion del tipo enumerado
     typedef enum tNombreTipo {enum1, enum2, enum3};
@@ -58,8 +84,7 @@ getline(cin, nombre);
     tNombreTipo variable1;
 ```
 
-**Posiciones del enum**
-Es importante saber que los enumerados del tipo de dato enumerado estan ordenados con indices empezando desde 0 a n.
+> *Es importante saber que los enumerados del tipo de dato enumerado estan ordenados con indices empezando desde 0 a n.*
 ```cpp
     typedef enum tSemana{lunes, martes, miercoles, jueves, viernes, sabado, domingo};
     // lunes = 0, martes = 1, miercoles = 2, ....
@@ -106,8 +131,7 @@ Leida de teclado
 
 Al final de este documento nos da la diferencias de Recorrido y Busqueda, y dentro de estas, la diferencia de usar Recorrido con otras o con arrays(respectivamente Busqueda).
 
-EXAMEN 5 Noviembre (TEMA 1,2,3).
-
+--- 
 
 > FSTREAM- Lectura y escritura de ficheros .txt 
 
