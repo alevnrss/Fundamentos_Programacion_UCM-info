@@ -1,4 +1,43 @@
+# TEMA 2
+---
+> CIN - Strings
+## 📌 Diferencias entre `getline(cin, ...)` y `cin.get()` en C++
+
+En C++ existen varias formas de leer datos desde la entrada estándar, y es común que aparezcan problemas cuando se usa `getline` después de `cin >>`.  
+
+Uno de los problemas mas comunes es querer leer con un getline despues de utilizar cin() y no haber limpiado el buffer.
+Cuando nosotros pedimos al usuario una edad, el usuario escribe: 20ENTER. El enter es para introducir en dicha variable edad pero esto provoca que el buffer se encuentre con ese enter del usuario. 
+Esto provoca que al utilizar el getline despues de ese cin no nos deje introducir ningun valor, pues el getline() lo que encuentra es ese espacio del enter.
+
+>SOLUCION: *Introducir un git.ignore()*
+```cpp
+    int edad;
+    string nombre;
+
+    cin >> edad
+    cin.ignore() // Limpiamos el buffer 
+
+    getline(cin, nombre); // Buffer limpio, podemos introducir valores  
+
+``` 
+
+### 🔹 `getline(cin, variable)`
+
+`getline` permite **leer una línea completa**, incluyendo **espacios**, hasta encontrar un **salto de línea** (`\n`).
+
+```cpp
+string nombre;
+getline(cin, nombre);
+```
+
+### 🔹 `cin.get()`
+`cin.get()` permite leer solamente **un unico caracter, espacios, o saltos de linea**.
+
+
+---
 # TEMA 3
+---
+
 > TIPO DE DATOS ENUMERADO
 - Este tipo de datos es de tipo de datos "SIMPLES" las cuales se encuentran definidos por el usuario.
 - Se trata de un conjunto de constantes enteras (ENUMERADORES).
