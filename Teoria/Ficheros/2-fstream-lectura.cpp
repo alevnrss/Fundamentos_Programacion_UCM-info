@@ -48,3 +48,8 @@ int main(){
 
     return 0;
 }
+
+/**
+ * También, en vez de usar archivo.get(c), podemos utilizar el archivo.ignore(1000,'/n') 
+ * Ambas son equivalentes
+ */
