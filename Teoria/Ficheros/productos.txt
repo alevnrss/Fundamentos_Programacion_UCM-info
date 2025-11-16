@@ -1,0 +1,5 @@
+12345678F 2 123.95 Reproductor de DVD
+12345678A 1 122.95 Reproductor de discos
+12345678B 10 13.95 Reproductor de bluerray
+12345678C 20 12.95 Reproductor de mp3
+x
