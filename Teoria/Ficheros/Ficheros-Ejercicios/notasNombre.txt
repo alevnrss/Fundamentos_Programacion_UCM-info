@@ -1,0 +1,11 @@
+4.5 Juan 
+8.25 Antonio 
+5.6 Jorge 
+7.75 Maria 
+9.5 Ana 
+8.75 Diego 
+7.25 Silvia 
+5 Mercedes 
+4.5 Guillermo 
+4 Hector 
+0 
