@@ -1,3 +1,6 @@
+# LABORATORIOS:
+    - Laboratorio 15 oct -> realizado (fstream, menus, switch, while)
+
 # TEMA 2
 ---
 
