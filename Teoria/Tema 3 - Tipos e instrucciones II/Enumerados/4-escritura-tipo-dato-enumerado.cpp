@@ -52,6 +52,14 @@ int main()
         cout << "marzo" << endl;
     }
 
+
+
+    /**
+     * Aqui mostramos el resultado de como es que aceptan operadores logicos.
+     * No se pueden incrementar.
+     * 
+     * Gracias a esto nos hace poder tener el codigo mas claro y limpio
+     */
     typedef enum
     {
         lunes,
