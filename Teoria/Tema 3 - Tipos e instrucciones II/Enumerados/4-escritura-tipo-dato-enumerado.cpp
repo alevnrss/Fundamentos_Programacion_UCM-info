@@ -33,10 +33,10 @@ int main()
 
     tMes mes;
     int opcionUser;
-    cout << "Introduzca un numero del 0 al 11" << endl;
+    cout << "Introduzca un numero del 1 al 12" << endl;
     cin >> opcionUser;
 
-    mes = tMes(opcionUser);
+    mes = tMes(opcionUser - 1);
 
     // es como decir, si mes == 0 , si mes == 1, ...
     if (mes == enero)
@@ -51,6 +51,7 @@ int main()
     {
         cout << "marzo" << endl;
     }
+    // ...
 
 
 
@@ -72,18 +73,22 @@ int main()
     } tDiaSemana;
 
     tDiaSemana dia;
-    cout << "Introduzca un numero del 0 al 6" << endl;
+    cout << "Introduzca un numero del 1 al 7" << endl;
     cin >> opcionUser;
 
-    dia = tDiaSemana(opcionUser);
+    // Para comprobar que el usuario a introducido el numero dentro del intervalo [1,7], deberemos 
+    // hacer un if segun opcionUser. Si se cumple, entonces a dia le damos el valor de user casteado a 
+    // uno de los valores del enum
+
+    dia = tDiaSemana(opcionUser - 1);
 
     if (dia == jueves) cout << "Jueves" << endl;
     if (dia == sabado) cout << "Sabado" << endl;
     if (dia == domingo) cout << "Domingo" << endl;
     
-    bool noLaborable = (dia >= sabado);
+    bool noLaborable = (dia == sabado || dia == domingo); // se convierte en TRUE
 
-    if(noLaborable) cout << "Hoy es dia no laborable (fin de semana)" << endl;
+    if(noLaborable) cout << "Hoy es dia no laborable (fin de semana)" << endl;  // si es true,entonces no dira que es dia no laboral
 
     return 0;
 }

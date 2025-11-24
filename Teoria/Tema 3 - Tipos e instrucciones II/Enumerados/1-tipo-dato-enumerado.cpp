@@ -1,6 +1,6 @@
 /**
  * Las enumeraciones contiene como el propio nombre indica, una enumeracion del conjunto
- * de posibles valores que pueden tomal las variables. (Valores literales)
+ * de posibles valores que pueden tomar las variables. (Valores literales)
  *
  * Lo que hace es dar valores de tipo string a valores numericos.
  * 
@@ -36,14 +36,15 @@ int main()
     moneda2 = euro;
 
     // El valor de dichas variables ya declaradas son enteros, saldra el numero de la posicion de su valor asignado.
-    cout << "Valor de la moneda 1: " << moneda1 << " Valor de la moneda 2. " << moneda2;
+    cout << "Valor de la moneda 1: " << moneda1 << endl << " Valor de la moneda 2: " << moneda2 << endl;
 
 
     // Lo que tambien podemos hacer es poner los valores numericos de cada string segun nuestro gusto
     // penny si no estuviera inicializado valdria 0 pero ahora que le damos el valor de 1 entonces penny sera uno.
     typedef enum {penny = 1, nickel = 5, dime = 10, quarter = 25, half = 50, dollar = 100} tMoneda;
     
-
+    tMoneda moneda3 = nickel;
+    cout << "Valor de la moneda 3 es :" << moneda3 << endl; // donde nickel deberia ser 2 pero le asignamos el valor de 5.
 
     return 0;
 }
